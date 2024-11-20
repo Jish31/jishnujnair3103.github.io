@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -23,18 +24,18 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" data-aos="fade-up">
     <div class="hero-text">
       <h1>Hi, I am <span class="highlight">Jishnu</span></h1>
       <h2>and I am a passionate <span class="highlight">AI Student</span>.</h2>
     </div>
-    <div class="hero-image">
+    <div class="hero-image" data-aos="fade-left">
       <img src="photo-.jpg" alt="Jishnu J. Nair">
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="section" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
       I am an analytically adept Business Analytics student with a passion for AI and data-driven decision-making. 
@@ -43,23 +44,27 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Here are some of the projects I’ve worked on:</p>
+  <section id="portfolio" class="section">
+    <h2 data-aos="fade-up">Portfolio</h2>
+    <p data-aos="fade-up">Here are some of the projects I’ve worked on:</p>
     <div class="portfolio-gallery">
-      <div class="portfolio-item">
+      <div class="portfolio-item" data-aos="zoom-in">
 <!--         <img src="project1.jpg" alt="Project 1"> -->
         <h3>AI-based Parotid Contouring</h3>
       </div>
-      <div class="portfolio-item">
+      <div class="portfolio-item" data-aos="zoom-in">
 <!--         <img src="project2.jpg" alt="Project 2"> -->
         <h3>Business Process Analysis</h3>
+      </div>
+      <div class="portfolio-item" data-aos="zoom-in">
+<!--         <img src="project3.jpg" alt="Project 3"> -->
+        <h3>Image Segmentation App</h3>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
+  <section id="contact" class="section" data-aos="fade-up">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
@@ -73,5 +78,8 @@
   <footer>
     <p>© 2024 Jishnu J. Nair. All Rights Reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
