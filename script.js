@@ -1,3 +1,9 @@
+// Initialize AOS
+AOS.init({
+  duration: 1000, // Animation duration in milliseconds
+  once: true, // Animation happens only once while scrolling down
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', event => {
