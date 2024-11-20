@@ -4,85 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Jishnu J. Nair - Business Analytics Student and AI Enthusiast">
-  <meta name="keywords" content="Portfolio, Business Analytics, AI, Data Science, Jishnu J. Nair">
   <title>Jishnu J. Nair - Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="sticky-header">
-    <h1>Jishnu J. Nair</h1>
-    <p>Business Analytics | AI Enthusiast | Data-Driven Innovator</p>
+  <!-- Navigation -->
+  <header class="nav-header">
+    <div class="logo">JISHNU</div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="about" class="section">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I am <span class="highlight">Jishnu</span></h1>
+      <h2>and I am a passionate <span class="highlight">AI Student</span>.</h2>
+    </div>
+    <div class="hero-image">
+      <img src="photo-.jpg" alt="Jishnu J. Nair">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
     <h2>About Me</h2>
-    <div class="about-container">
-      <img src="photo-.jpg" alt="Jishnu J. Nair" class="profile-photo">
-      <p>
-        I am an analytically adept Business Analytics student with a passion for AI and data-driven decision-making. 
-        I aim to create impactful solutions through advanced analytics and problem-solving.
-      </p>
-    </div>
+    <p>
+      I am an analytically adept Business Analytics student with a passion for AI and data-driven decision-making. 
+      My goal is to create impactful solutions through advanced analytics and innovative problem-solving.
+    </p>
   </section>
 
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MSc in Business Analytics</strong>, National University of Ireland, Galway (2024-2025)</li>
-      <li><strong>BTech in Electronics & Telecommunication Engineering</strong>, NMIMS, Mumbai, India (2020-2024)</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-gallery">
-      <div class="project-card">
-        <h3>AI-based Parotid Contouring</h3>
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Here are some of the projects I’ve worked on:</p>
+    <div class="portfolio-gallery">
+      <div class="portfolio-item">
 <!--         <img src="project1.jpg" alt="Project 1"> -->
-        <p>Developed a U-Net model for radiation oncology, achieving 97% accuracy.</p>
+        <h3>AI-based Parotid Contouring</h3>
       </div>
-      <div class="project-card">
-        <h3>Business Process Analysis</h3>
+      <div class="portfolio-item">
 <!--         <img src="project2.jpg" alt="Project 2"> -->
-        <p>Analyzed store processes and proposed improvements during a Coursera course.</p>
+        <h3>Business Process Analysis</h3>
       </div>
     </div>
   </section>
 
-  <section id="experience" class="section">
-    <h2>Work Experience</h2>
-    <ul>
-      <li><strong>AI/ML Intern</strong>, L&T Precision Engineering & Systems, Mumbai, India (2023-2024)</li>
-      <li><strong>Research Group Member</strong>, NMIMS, India (2022-2024)</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
     <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2024 Jishnu J. Nair</p>
+    <p>© 2024 Jishnu J. Nair. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
